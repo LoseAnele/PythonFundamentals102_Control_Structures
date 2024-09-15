@@ -33,18 +33,19 @@ In this exercise, you will use a loop to print numbers up to a user-defined limi
 """
 
 # 1. Ask the user to enter a number as the limit and convert it to an integer.
-limit_str = "Enter a number as the limit: "
+limit_str = input("Enter a number as the limit: ")
 limit = limit_str  # Convert the limit_str to an integer
 
 # 2. Use a  for loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
+for i in range(1, limit + 1):
+    print(i)
 
 # Use a while loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Initialise a variable to start the loop
 number = 1
 while number <= 1:
-    #print number
-    # Increment number in each iteration   
-    pass
+    print(i) #print number
+    number += 1 # Increment number in each iteration   
 
 
 """
