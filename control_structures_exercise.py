@@ -4,15 +4,18 @@ In this exercise, you will use conditional statements to categorise people based
 """
 
 # 1. Ask the user for their age as input and convert it to an integer.
-user_age_str = "Enter your age: "
+user_age_str = input("Enter your age: ")
 # Convert the user_age_str to an integer
 
 # Convert the user_age_str to an integer
 user_age_int = int(user_age_str)
 # 2. Use conditional statements to categorise the user into one of the following categories:
-# - If age is less than 18, print "You are a minor."
-# - If age is between 18 and 65 (inclusive), print "You are an adult."
-# - If age is 66 or higher, print "You are a senior citizen."
+if user_age_int < 18: # - If age is less than 18 print "You are a minor."
+    print("You are a minor.") 
+elif user_age_int > 17 and user_age_int < 66: # - If age is between 18 and 65 (inclusive), print "You are an adult."
+    print("You are an adult.")
+else: # - If age is 66 or higher, print "You are a senior citizen."
+    print("You are a senior citizen.")
 
 
 """ 
