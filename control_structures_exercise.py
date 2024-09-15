@@ -54,16 +54,16 @@ In this exercise, you will use a loop and loop control statements to print odd n
 """
 
 # 1. Ask the user to enter a number as the limit and convert it to an integer.
-limit_str = "Enter a number as the limit: "
-# Convert the limit_str to an integer
+limit_str = input("Enter a number as the limit: ")
+limit = int(limit_str) # Convert the limit_str to an integer
 
 # 2. Use a for loop to iterate from 1 to the user-defined limit (inclusive).
 # 3. Inside the loop, use a loop control statement to skip even numbers and print odd numbers.
 # Fill in the code to achieve the goal:
 
-for number in range(1):
-    # Add code to check if number is odd and print odd numbers
-    pass
+for number in range(1, limit + 1):
+    if number % 2 != 0: # Add code to check if number is odd and print odd numbers
+        print(number)
 
 
 """
