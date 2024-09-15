@@ -94,4 +94,4 @@ multi = int(multiplier_str) # Convert the multiplier_str to an integer
 def multiplication_table(multi_):
     for number_x in range(1, 11):
         for number_y in range(1, multi + 1):
-            print(f"{number_x} x {multi_} = {number_x * multi_}") # Add code to print the multiplication table
+            print(f"{number_x} x {number_y} = {number_x * number_y}") # Add code to print the multiplication table
