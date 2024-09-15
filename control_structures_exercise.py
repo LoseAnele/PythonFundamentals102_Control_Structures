@@ -71,7 +71,7 @@ Exercise: Nested Loops
 In this exercise, you will use nested loops to generate a multiplication table.
 """
 # 1. Ask the user for a number as the multiplier and convert it to an integer.
-multiplier_str = "Enter a number as the multiplier: "
+multiplier_str = input("Enter a number as the multiplier: ")
 # Convert the multiplier_str to an integer
 
 # 2. Use nested loops to generate a multiplication table.
@@ -81,7 +81,4 @@ multiplier_str = "Enter a number as the multiplier: "
 
 for number_x in range(1, 11):
     for number_y in range(1):
-        # Add code to print the multiplication table
-        
-        pass
-    pass
+        print(f"{number_x} x {number_y} = {number_x * number_y}") # Add code to print the multiplication table
