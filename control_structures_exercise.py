@@ -18,7 +18,7 @@ def categorize_age(user_age):
     else: # - If age is 66 or higher, print "You are a senior citizen."
         print("You are a senior citizen.")
 
-
+categorize_age(user_age_int)
 """ 
 Exercise: Conditional Statements
 In this exercise, you will use conditional statements to check if a year is a leap year.
@@ -34,7 +34,7 @@ def is_leap_year(year_):
         print(f"{True}")
     else:
         print(f"{False}")
-
+is_leap_year(year)
 
 """
 Exercise: Loops
@@ -43,13 +43,14 @@ In this exercise, you will use a loop to print numbers up to a user-defined limi
 
 # 1. Ask the user to enter a number as the limit and convert it to an integer.
 limit_str = input("Enter a number as the limit: ")
-limit = limit_str  # Convert the limit_str to an integer
+limit = int(limit_str)  # Convert the limit_str to an integer
 
 # 2. Use a  for loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
-def print_numbers_for_loop(limit_):
+def print_numbers_for_loop(limit_: int):
     for i in range(1, limit_ + 1):
         print(i)
 
+print_numbers_for_loop(limit)
 # Use a while loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Initialise a variable to start the loop
 def print_numbers_while_loop(limit_):
@@ -57,7 +58,7 @@ def print_numbers_while_loop(limit_):
     while number <= limit_:
         print(number) #print number
         number += 1 # Increment number in each iteration   
-
+print_numbers_while_loop(limit)
 
 """
 Exercise: Loop Control Statements
@@ -76,7 +77,7 @@ def print_odd_numbers(limit_):
     for number in range(1, limit_ + 1):
         if number % 2 != 0: # Add code to check if number is odd and print odd numbers
             print(number)
-
+print_odd_numbers(limit)
 
 """
 Exercise: Nested Loops
@@ -95,3 +96,5 @@ def multiplication_table(multi_):
     for number_x in range(1, 11):
         for number_y in range(1, multi + 1):
             print(f"{number_x} x {number_y} = {number_x * number_y}") # Add code to print the multiplication table
+
+multiplication_table(multi)
