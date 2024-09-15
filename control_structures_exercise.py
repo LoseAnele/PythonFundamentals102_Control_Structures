@@ -25,6 +25,14 @@ In this exercise, you will use conditional statements to check if a year is a le
 
 year = 0000
 
+if year % 400 == 0:
+    print(f"{True}")
+elif year % 100 == 0:
+    print(f"{False}")
+elif year % 4 == 0:
+    print(f"{True}")
+else:
+    print(f"{False}")
 
 
 """
