@@ -1,7 +1,7 @@
 import unittest
 from control_structures_exercise import (categorize_age, is_leap_year, print_numbers_for_loop, print_numbers_while_loop, print_odd_numbers, multiplication_table) 
 
-class TestExercises(unittest.TestCase):
+class Test(unittest.TestCase):
 
     # Test for Exercise 1 - Age Categorization
     def test_categorize_age(self):
@@ -31,16 +31,16 @@ class TestExercises(unittest.TestCase):
     # Test for Exercise 6 - Multiplication Table
     def test_multiplication_table(self):
         expected_output = [
-            ['1 x 1 = 1'],
-            ['2 x 1 = 2'],
-            ['3 x 1 = 3'],
-            ['4 x 1 = 4'],
-            ['5 x 1 = 5'],
-            ['6 x 1 = 6'],
-            ['7 x 1 = 7'],
-            ['8 x 1 = 8'],
-            ['9 x 1 = 9'],
-            ['10 x 1 = 10']
+            '1 x 1 = 1',
+            '2 x 1 = 2',
+            '3 x 1 = 3',
+            '4 x 1 = 4',
+            '5 x 1 = 5',
+            '6 x 1 = 6',
+            '7 x 1 = 7',
+            '8 x 1 = 8',
+            '9 x 1 = 9',
+            '10 x 1 = 10'
         ]
         self.assertEqual(multiplication_table(1), expected_output)
 
